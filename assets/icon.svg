@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="houseGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8ad6ea"/>
+      <stop offset="100%" stop-color="#6fcde6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- House -->
+  <g id="house">
+    <rect x="128" y="232" width="224" height="176" rx="22" fill="url(#houseGrad)"/>
+    <polygon points="248,132 108,248 392,248" fill="url(#houseGrad)"/>
+    <path d="M304,172 L328,190 L328,408 L304,408 Z" fill="#5fbcd1" opacity="0.35"/>
+  </g>
+
+  <!-- Long-shadow for the equals bars (diagonal) -->
+  <g opacity="0.22" fill="#5fbcd1">
+    <rect x="200" y="248" width="200" height="38" rx="19" transform="translate(32,28)"/>
+    <rect x="200" y="308" width="200" height="38" rx="19" transform="translate(32,28)"/>
+  </g>
+
+  <!-- Equals bars -->
+  <g id="equals">
+    <rect x="200" y="248" width="200" height="38" rx="19" fill="#f1f5f6"/>
+    <rect x="200" y="308" width="200" height="38" rx="19" fill="#f2f5f5"/>
+  </g>
+
+  <!-- Right translucent rounded bar -->
+  <rect x="336" y="84" width="84" height="352" rx="28" fill="#f1f4f4" opacity="0.9"/>
+</svg>
