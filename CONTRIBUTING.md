@@ -48,6 +48,13 @@ Because QuickBars interacts with system-level overlays and physical remote key i
 **Hardware**: We test on real Android TV hardware, such as the Nvidia Shield or Chromecast with Google TV, to ensure performance and compatibility.
 
 **Manual Checks**: We make sure the feature/fix we implemented is working as expected, and that any other feature it may have affected was not affected at all. This requires familiarity with the codebase.
+**If large changes were made, especially ones that affect data storage and persistance** - then the following test is required:
+1. Run the main (public version) branch on your Android TV device using a debug build, and set it up normally (connect to HA, create a QuickBar with some entities).
+2. Run your new branch on the same device (simulating a software update).
+3. Make sure no data was corrupted during this update, and test all other functionality normally.
+
+## :brain: AI Use in Contributions
+AI use in PRs is allowed, but all code AI writes must be 100% understandable and familiar to the person making the PR, as if he wrote it himself, as well as meet the project's code and testing standards.
 
 ## :rocket: Help Wanted: CI/CD & Automation
 Manual testing is the current standard for this project, but I am very open to improvements. If you have experience with automated UI testing for Android TV or ideas for a CI/CD pipeline (e.g., GitHub Actions for build verification), please open an issue! I would love to discuss how to make the project more robust.
